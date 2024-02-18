@@ -32,4 +32,4 @@ else{
     third = "Hub"
 }
 
-console.log(`${first} ${second} ${third}`)
+console.log(`${first} ${second} ${third}`);
