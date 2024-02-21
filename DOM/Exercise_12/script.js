@@ -1,0 +1,5 @@
+document.getElementById("red").style.backgroundColor = "red"
+document.getElementById("blue").style.backgroundColor = "blue"
+document.getElementById("green").style.backgroundColor = "green"
+document.getElementById("yellow").style.backgroundColor = "yellow"
+document.getElementById("orange").style.backgroundColor = "orange"
