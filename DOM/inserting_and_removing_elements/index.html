@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-green{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="color: red;" data-createdBy="ramesh" data-createdOn="11/10/2000">Hey I am a box</div>
+        <div class="box1">Hey I am a box</div>
+    </div>
+    <script>
+        let div = document.createElement("div")
+        div.innerHTML = "I have been inserted <b>by ashish</b>"
+        div.setAttribute("class","created")
+        document.querySelector(".container").append(div)
+
+        let div2 = document.createElement("h1")
+        div2.innerHTML = "lets make a <i>try</i>"
+        document.querySelector(".container").before(div2)
+
+        let div3 = document.createElement("h3")
+        div3.innerHTML = "tried for image but no happened"
+        document.querySelector(".box1").prepend(div3)
+
+        let div4 = document.createElement("h3")
+        div4.innerHTML = "tried for image but no happened"
+        document.querySelector(".box1").after(div4)
+
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterend", "<p>this is me the maker 'afterend'</p>")
+        let cont1 = document.querySelector(".container")
+        cont1.insertAdjacentHTML("afterbegin", "<p>this is me the maker 'afterbegin'</p>")
+        let cont2 = document.querySelector(".container")
+        cont2.insertAdjacentHTML("beforebegin", "<p>this is me the maker 'beforebegin'</p>")
+        let cont3 = document.querySelector(".container")
+        cont3.insertAdjacentHTML("beforeend", "<p>this is me the maker 'beforeend'</p>")
+
+        let some = document.querySelector(".container")
+        some.classList.add("somehow")
+        let some1 = document.querySelector(".container")
+        some1.classList.remove("red")
+        let some2 = document.querySelector(".container")
+        some1.classList.toggle("bg-green")
+        let some3 = document.querySelector(".container")
+        some1.classList.toggle("bg-green")
+
+    </script>
+</body>
+</html>
