@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 13</title>
+    <style>
+        body{
+            background-color: #151515;
+        }
+        .box{
+            background-color: black;
+            color: white;
+            display: flex;
+            width: 700px;
+            height: 100px;
+            border: 2px black solid;
+            align-items: center;
+            border-radius: 8px;
+            margin: 5px;
+            
+        }
+        img{
+            width: 130px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .text h2, p{
+            padding: 0px 6px;
+        }
+        .image{
+            position: relative;
+        }
+        .image .capsule{
+            position: absolute;
+            bottom: 18px;
+            z-index: 10;
+            right: 13px;
+            background: rgb(19, 19, 19);
+            opacity: 0.8;
+            color: white;
+            padding: 3px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image">
+                <img src="https://t4.ftcdn.net/jpg/05/66/05/55/360_F_566055532_TVl1zRxXpTJYVHAq8RwrI2r2LQvu7oN3.jpg" alt="">
+                <div class="capsule">31:60</div>
+            </div>
+            <div class="text">
+                <h2>Introduction to Backend | Sigma Web Dev video #2</h2>
+                <p>CodeWithHarry . 727k views . 2 months ago</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
