@@ -9,7 +9,7 @@ This faulty calculator does following:
 - ---> /
 / ---> **
 
-note --> It performs wrong operations 10% of the times
+note --> It performs wrong operations 50% of the times
 */
 
 let firstNum = prompt("First number:")
@@ -24,7 +24,7 @@ let obj = {
     "/": "**"
 }
 
-if (random>0.1) {
+if (random>0.5) {
     console.log(`The result is ${eval(`${firstNum} ${operation} ${secondNum}`)}`);
     alert(`The result is ${eval(`${firstNum} ${operation} ${secondNum}`)}`);
 }
